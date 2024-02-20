@@ -48,13 +48,13 @@ let horasNuevasTraumatologia = [
     { hora: '12:00', especialista: 'MATIAS ARAVENA', paciente: 'SUSANA POBLETE', rut: '14345656-6', prevision: 'FONASA' }
 ]
 let traumatologiaNuevo = traumatologia.concat(horasNuevasTraumatologia);
-console.log("TABLA CON NUEVAS HORAS TRAUMATOLOGÍA REQUERIMIENTO 1")
+console.log("TABLA CON NUEVAS HORAS TRAUMATOLOGÍA - REQUERIMIENTO 1")
 console.table(traumatologiaNuevo) // Tabla de arreglos unidos
 
 // Requerimiento 2
 
 // Eliminar el primer y último elemento del arreglo de Radiología
-console.log("TABLA RADIOLOGIA ORIGINAL Y LUEGO CON ELEMENTOS ELIMINADOS REQUERIMIENTO 2")
+console.log("TABLA RADIOLOGIA ORIGINAL Y LUEGO CON ELEMENTOS ELIMINADOS - REQUERIMIENTO 2")
 
 console.table(radiologia); //Arreglo original de Radiología
 
@@ -94,7 +94,7 @@ document.write(`<p>${pacientesTotales[i].paciente}</p>`);
 /* Filtrar aquellos pacientes que indican ser de ISAPRE en la lista de consultas médicas
 de Dental */
 
-console.log("PACIENTES DENTAL CON ISAPRE")
+console.log("PACIENTES DENTAL CON ISAPRE - REQUERIMIENTO 5")
 
 let previsionDental = dental.filter(function(i){
     return i.prevision === 'ISAPRE';
@@ -106,7 +106,7 @@ console.table(previsionDental);
 /* Filtrar aquellos pacientes que indican ser de FONASA en la lista de consultas médicas
 de Traumatología */
 
-console.log("PACIENTES TRAUMATOLOGIA CON FONASA")
+console.log("PACIENTES TRAUMATOLOGIA CON FONASA - REQUERIMIENTO 6")
 
 let previsionTraumatologia = traumatologiaNuevo.filter(function(i){
     return i.prevision === 'FONASA';
